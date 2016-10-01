@@ -71,10 +71,11 @@ object chp3 {
     println(thrill.sortWith((s,t) => s.charAt(0).toLower < t.charAt(0).toLower))
     println(thrill.tail)
 
+    val pair = (99,"luftbalons")
+    println(pair._1)
+    println(pair._2)
 
-
-
-
+    
   }
 
 }
