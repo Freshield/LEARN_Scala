@@ -1,4 +1,7 @@
 import java.math.BigInteger
+import scala.collection.mutable.Set
+import scala.collection.immutable.HashSet
+//import scala.collection.mutable.Map
 
 /**
   * Created by FRESHIELD on 2016/9/25.
@@ -75,7 +78,29 @@ object chp3 {
     println(pair._1)
     println(pair._2)
 
-    
+    var jetSet = Set("boeing","airbus")
+    jetSet += "lear"
+    println(jetSet.contains("cessna"))
+
+    val movieSet = Set("hitch","poltergeist")
+    movieSet += "shrek"
+    println(movieSet)
+
+    val hashSet = HashSet("tomatoes","chilies")
+    println(hashSet + "coriander")
+
+    var treasureMap = Map[Int, String]()
+    treasureMap += (1 -> "go to island")
+    treasureMap += (2 -> "find big x on ground")
+    treasureMap += (3 -> "dig")
+
+    println(treasureMap(2))
+
+    val romanNumberal = Map(1 -> "i", 2 -> "ii", 3 -> "iii")
+    println(romanNumberal(3))
+
+
+
   }
 
 }
