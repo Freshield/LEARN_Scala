@@ -1,6 +1,7 @@
 import java.math.BigInteger
 import scala.collection.mutable.Set
 import scala.collection.immutable.HashSet
+import scala.io.Source
 //import scala.collection.mutable.Map
 
 /**
@@ -9,6 +10,7 @@ import scala.collection.immutable.HashSet
 object chp3 {
 
   def main(args: Array[String]) {
+    /*
     println("here")
 
     val big = new BigInteger("12345")
@@ -99,8 +101,61 @@ object chp3 {
     val romanNumberal = Map(1 -> "i", 2 -> "ii", 3 -> "iii")
     println(romanNumberal(3))
 
+    def printArgs(args: Array[String]): Unit = {
+      var i = 0
+      while (i < args.length){
+        println(args(i))
+        i += 1
+      }
+    }
+
+    def printArgsFun(args: Array[String]) : Unit = {
+      for (arg <- args){
+        println(arg)
+      }
+    }
+
+    def printArgsFun2(args: Array[String]) : Unit = {
+      args.foreach(println)
+    }
+
+    def formatArgs(args : Array[String]) = args.mkString(" ");
+    println(formatArgs(args))
+
+    val res = formatArgs(Array("zero","one","two"))
+    //assert(res == "zero\none\ntwo")
 
 
-  }
+    if (args.length > 0){
+      for (line <- Source.fromFile(args(0)).getLines){
+        print(line.length + " " + line+"\n")
+      }
+    }
+    else {
+      Console.err.println("please enter filename")
+    }
+    */
+
+    val lines = Source.fromFile(args(0)).getLines.toList
+
+    def widthOfLength(s: String) = s.length.toString.length
+/*
+var maxWidth = 0
+for (ne <- lines){
+  maxWidth = maxWidth.max(widthOfLength(line))
+}
+*/
+    val longestLine = lines.reduceLeft(
+  (a,b) => if (a.length > b.length) a else  b
+)
+    val maxWidth = widthOfLength(longestLine)
+
+    for (line <- lines){
+      val numSpaces = maxWidth - widthOfLength(line)
+      val padding = " " * numSpaces
+      print(padding + line.length +" | " + line + "\n")
+    }
+
+}
 
 }
