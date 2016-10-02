@@ -25,7 +25,7 @@ object chp6 {
     println(x * 2)
 
     implicit def intToRational(x: Int) = new Rational(x)
-    
+
     println(2 * x)
   }
 
