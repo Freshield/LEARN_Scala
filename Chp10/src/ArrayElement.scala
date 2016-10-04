@@ -3,4 +3,8 @@
   */
 class ArrayElement(
                   val contents: Array[String]
-                  ) extends Element
+                  ) extends Element{
+  override def demo(): Unit ={
+    println("arrayelement")
+  }
+}
