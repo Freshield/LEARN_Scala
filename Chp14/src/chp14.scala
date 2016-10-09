@@ -1,10 +1,11 @@
 /**
   * Created by FRESHIELD on 2016/10/8.
   */
-class chp14 {
+object chp14 {
 
   def main(args: Array[String]) {
-    
+    println("here")
+    (new ElementSuite2).execute()
   }
 
 }
