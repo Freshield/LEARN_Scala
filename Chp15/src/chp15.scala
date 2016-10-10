@@ -4,7 +4,7 @@
 object chp15 {
 
   def main(args: Array[String]) {
-    
+
   }
 
 }
