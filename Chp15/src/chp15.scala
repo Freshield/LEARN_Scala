@@ -77,6 +77,9 @@ object chp15 {
     case _ => expr
   }
 
+
+
+
   def checkBinary1(expr: Expr): Unit ={
     expr match {
       case BinOp(op, left, right) => println(expr + " is a binary operation")
