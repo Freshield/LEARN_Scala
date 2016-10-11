@@ -69,6 +69,13 @@ object chp15 {
     println(isStringArray(Array(1,2,3)))
 
     println(boundMatch(UnOp("abs", UnOp("abs", Var("x")))))
+
+    println(simplifyAdd(BinOp("+", Var("1"), Var("1"))))
+  }
+
+  def simplifyAdd(expr: Expr) = expr match {
+    case BinOp("+", x, y) if x == y => BinOp("*", x, Number(2))
+    case _ => expr
   }
 
   def boundMatch(expr: Expr) = expr match {
