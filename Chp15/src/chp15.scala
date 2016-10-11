@@ -77,6 +77,20 @@ object chp15 {
     println(simplifyAll(BinOp("x", Var("x"), Number(0))))
 
     println(describeMatch(Var("x")))
+
+    val capitals =
+      Map("France" -> "Paris", "Japan" -> "Tokyo")
+
+    println(capitals get "France")
+    println(capitals get "North Pole")
+
+    show(capitals get "France")
+    show(capitals get "North Pole")
+  }
+
+  def show(x: Option[String]) = x match {
+    case Some(s) => s
+    case None => "?"
   }
 
   def describeMatch(expr: Expr) = (expr: @unchecked) match {
