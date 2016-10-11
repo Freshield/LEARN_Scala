@@ -29,8 +29,8 @@
       <file leaf-file-name="chp15.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chp15.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+            <state relative-caret-position="548">
+              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -577,12 +577,12 @@
       <workItem from="1476063680656" duration="625000" />
       <workItem from="1476125409575" duration="6812000" />
       <workItem from="1476134612098" duration="9000" />
-      <workItem from="1476213844800" duration="3560000" />
+      <workItem from="1476213844800" duration="3932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11006000" />
+    <option name="totallyTimeSpent" value="11378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -684,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chp15.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+        <state relative-caret-position="548">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
           <folding />
         </state>
       </provider>

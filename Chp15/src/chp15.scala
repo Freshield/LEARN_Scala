@@ -71,6 +71,19 @@ object chp15 {
     println(boundMatch(UnOp("abs", UnOp("abs", Var("x")))))
 
     println(simplifyAdd(BinOp("+", Var("1"), Var("1"))))
+
+    println(simplifyAll(UnOp("-", UnOp("-",Var("x")))))
+    println(simplifyAll(BinOp("*", Var("x"), Number(1))))
+    println(simplifyAll(BinOp("x", Var("x"), Number(0))))
+  }
+
+  def simplifyAll(expr: Expr): Expr = expr match {
+    case UnOp("-", UnOp("-",e)) => simplifyAll(e)
+    case BinOp("+", e, Number(0)) => simplifyAll(e)
+    case BinOp("*", e, Number(1)) => simplifyAll(e)
+    case UnOp(op, e) => UnOp(op, simplifyAll(e))
+    case BinOp(op, l, r) => BinOp(op, simplifyAll(l), simplifyAll(r))
+    case _ => expr
   }
 
   def simplifyAdd(expr: Expr) = expr match {
