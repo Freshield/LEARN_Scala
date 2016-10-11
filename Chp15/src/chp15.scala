@@ -75,6 +75,13 @@ object chp15 {
     println(simplifyAll(UnOp("-", UnOp("-",Var("x")))))
     println(simplifyAll(BinOp("*", Var("x"), Number(1))))
     println(simplifyAll(BinOp("x", Var("x"), Number(0))))
+
+    println(describeMatch(Var("x")))
+  }
+
+  def describeMatch(expr: Expr) = (expr: @unchecked) match {
+    case Number(_) => "a number"
+    case Var(_) => "a variable"
   }
 
   def simplifyAll(expr: Expr): Expr = expr match {
