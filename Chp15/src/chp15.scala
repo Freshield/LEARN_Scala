@@ -42,6 +42,79 @@ object chp15 {
 
     println(testLittlePI)
 
+    deepMatch(BinOp("+", Var("x"), Number(0)))
+    deepMatch(BinOp("x", Var("x"), Number(0)))
+
+    sequenceMatch(List(0, 1, 2))
+    sequenceMatch(List(2,3,4))
+    sequenceMatch(List(0,1,2,3))
+
+    mutableSequenceMatch(List(0,1,2))
+    mutableSequenceMatch(List(0,1,2,3))
+
+    try5SequenceMatch(List(0,4,4,4,4))
+    try5SequenceMatch(List(0,1,2,3,4))
+    try5SequenceMatch(List(0,1,4))
+
+    tupleDemo("a ", 3, "-tuple")
+
+    println(generalSize("abc"))
+    println(generalSize(Map(1 -> 'a', 2 -> 'b')))
+    println(generalSize(Math.PI))
+
+    println(isIntIntMap(Map(1 -> 1)))
+    println(isIntIntMap(Map("abc" -> "bcd")))
+
+    println(isStringArray(Array("abc")))
+    println(isStringArray(Array(1,2,3)))
+
+    println(boundMatch(UnOp("abs", UnOp("abs", Var("x")))))
+  }
+
+  def boundMatch(expr: Expr) = expr match {
+    case UnOp("abs", e @ UnOp("abs", _)) => e
+    case _ =>
+  }
+
+  def isStringArray(x: Any) = x match {
+    case a: Array[String] => "yes"
+    case _ => "no"
+  }
+
+  def isIntIntMap(x: Any) = x match {
+    case m: Map[Int, Int] => true
+    case _ => false
+  }
+
+  def generalSize(x: Any) = x match {
+    case s: String => s.length
+    case m: Map[_, _] => m.size
+    case _ => 1
+  }
+
+  def tupleDemo(expr: Any) = expr match {
+    case (a,b,c) => println("matched " + a + b + c)
+    case _ => println("other")
+  }
+
+  def try5SequenceMatch(expr: List[Int]) = expr match {
+    case List(0, _3, 4) => println("found it")
+    case _ => println("other")
+  }
+
+  def mutableSequenceMatch(expr: List[Int]) = expr match {
+    case List(0, _*) => println("found it")
+    case _ => println("other")
+  }
+
+  def sequenceMatch(expr: List[Int]) = expr match {
+    case List(0, _, _) => println("found it")
+    case _ => println("other")
+  }
+
+  def deepMatch(expr: Expr) = expr match{
+    case BinOp("+", e, Number(0)) => println(e + " a deep match")
+    case _ => println("other")
   }
 
   def testLittlePI() = {
