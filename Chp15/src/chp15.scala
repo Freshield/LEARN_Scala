@@ -86,7 +86,50 @@ object chp15 {
 
     show(capitals get "France")
     show(capitals get "North Pole")
+
+    val myTuple = (123, "abc")
+    val (number, string) = myTuple
+    println(number)
+    println(string)
+
+    val exp = new BinOp("*", Number(5), Number(1))
+    val BinOp(op1, left, right) = exp
+    println(op1)
+    println(left)
+    println(right)
+
+    val withDefault: Option[Int] => Int = {
+      case Some(x) => x
+      case None => 0
+    }
+
+    println(withDefault(Some(10)))
+    println(withDefault(None))
+
+    val second: List[Int] => Int = {
+      case x :: y :: _ => y
+    }
+
+    println(second(List(5,6,7)))
+    //println(second(List()))
+
+    val second2: PartialFunction[List[Int], Int] = {
+      case x :: y :: _ => y
+    }
+
+    println(second2.isDefinedAt(List(5,6,7)))
+    println(second2.isDefinedAt(List()))
+
+    for ((country, city) <- capitals)
+      println("The capital of " + country + " is " + city)
+
+    val results = List(Some("apple"), None, Some("orange"))
+    for (Some(fruit) <- results) println(fruit)
+
+
   }
+
+
 
   def show(x: Option[String]) = x match {
     case Some(s) => s
