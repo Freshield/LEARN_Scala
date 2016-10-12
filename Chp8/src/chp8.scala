@@ -92,6 +92,7 @@ object chp8 {
 
 
 
+
     val arr = Array("what's","up","doc?")
     echo(arr: _*)
 
