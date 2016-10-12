@@ -45,6 +45,30 @@ object chp16 {
       else xs.head :: insert(x, xs.tail)
     }
 
+    val List(a,b,c) = fruit
+    println(a)
+    println(b)
+    println(c)
+
+    val d :: e :: rest = fruit
+    println(d)
+    println(e)
+    println(rest)
+
+    def isort1(xs: List[Int]): List[Int] = xs match {
+      case List() => List()
+      case x :: xs1 => insert1(x, isort1(xs1))
+    }
+
+    def insert1(x: Int, xs: List[Int]): List[Int] = xs match {
+      case List() => List(x)
+      case y :: ys => if (x <= y) x :: xs
+                      else y :: insert1(x, ys)
+    }
+
+
+    
+
 
 
   }
