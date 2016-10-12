@@ -39,7 +39,7 @@
       <file leaf-file-name="ExprFormatter.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ExprFormatter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
+            <state relative-caret-position="1392">
               <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -80,8 +80,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Expr.scala" />
         <option value="$PROJECT_DIR$/src/chp15.scala" />
-        <option value="$PROJECT_DIR$/src/ExprFormatter.scala" />
         <option value="$PROJECT_DIR$/src/Express.scala" />
+        <option value="$PROJECT_DIR$/src/ExprFormatter.scala" />
       </list>
     </option>
   </component>
@@ -619,12 +619,12 @@
       <workItem from="1476125409575" duration="6812000" />
       <workItem from="1476134612098" duration="9000" />
       <workItem from="1476213844800" duration="6493000" />
-      <workItem from="1476229839784" duration="7007000" />
+      <workItem from="1476229839784" duration="7028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20946000" />
+    <option name="totallyTimeSpent" value="20967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -637,7 +637,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14982818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14982818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,7 +742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExprFormatter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
+        <state relative-caret-position="1392">
           <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="true" />

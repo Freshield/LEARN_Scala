@@ -55,8 +55,6 @@ class ExprFormatter {
         val oper = l beside elem(" " + op + " ") beside r
         if (enclPrec <= opPrec) oper
         else elem("(") beside oper beside elem(")")
-
-
     }
 
   def format(e: Expr): Element = format(e, 0)
