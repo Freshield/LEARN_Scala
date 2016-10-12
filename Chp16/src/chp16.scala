@@ -20,7 +20,14 @@ object chp16 {
       )
     val empty = List()
 
-    
+    val fruit1 = "apples" :: ("oranges" :: ("pears" :: Nil))
+    val nums1 = 1 :: 2 :: 3 :: 4 :: Nil
+    val diag31 = (1 :: 0 :: 0 :: Nil) ::
+      (0 :: 1 :: 0 :: Nil) ::
+      (0 :: 0 :: 1 :: Nil) :: Nil
+    val empty1 = Nil
+
+    diag3.foreach(println)
 
 
 
