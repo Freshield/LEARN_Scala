@@ -169,7 +169,91 @@ object chp16 {
     println(intSort(mixedInts))
     println(reverseIntSort(mixedInts))
 
+    println(List(1,2,3) map (_ + 1))
 
+    val words = List("the", "lol","quicke", "brown", "fox")
+
+    println(words map (_.length))
+
+    println(words map (_.toList.reverse.mkString))
+
+    println(words map (_.toList))
+    println(words flatMap (_.toList))
+
+    println(List.range(1, 5) flatMap (
+      i => List.range(1, i) map (j => (i, j))
+      ))
+
+    println(List.range(1,5))
+
+    println(for (i <- List.range(1, 5); j <- List.range(1, i)) yield (i, j))
+
+    println(List.range(1, 5) map (j => (5, j)) )
+
+    var sum = 0
+
+    List(1,2,3,4) foreach (sum += _)
+
+    println(sum)
+
+    println(List(1,2,3,4,5) filter (_ % 2 == 0))
+
+    println(words filter (_.length == 3))
+
+    println(List(1,2,3,4,5) partition (_ % 2 == 0))
+
+    println(List(1,2,3,4,5) find (_ % 2 == 0))
+
+    println(List(1,2,3,4,5) find (_ <= 0))
+
+    println(List(1,2,3,-4,5) takeWhile (_ > 0))
+
+    println(words dropWhile (_.contains("e")))
+
+    println(List(1,2,3,-4,5) span (_ > 0))
+
+    def hasZeroRow(m: List[List[Int]]) = {
+      m exists (row => row forall (_ == 0))
+    }
+
+    diag3 forall(x => x forall (y => {println(y);true}))
+
+    println(hasZeroRow(diag3))
+
+    def sum1(xs: List[Int]): Int = (0 /: xs) (_ + _)
+
+    def product(xs: List[Int]): Int = (1 /: xs) (_ * _)
+
+    println(sum1(List(1,2,3,4,5)))
+
+    println(product(List(1,2,3,4,5)))
+
+    println(("" /: words) (_ + " " + _))
+    println((words.head /: words.tail) (_ + " " + _))
+
+    def flattenLeft[T] (xss: List[List[T]]) = {
+      (List[T]() /: xss) (_ ::: _)
+    }
+
+    println(flattenLeft(List(List(1),List(2,3,4),List(5))))
+
+    println(List(1) ::: List(2,3,4,5))
+
+    def flattenRight[T](xss: List[List[T]]) = {
+      (xss :\ List[T]()) (_ ::: _)
+    }
+
+    println(flattenRight(List(List(1),List(2,3,4),List(5))))
+
+    def reverseLeft[T](xs: List[T]) = (List[T]() /: xs)((ys, y) => y :: ys)
+
+    println(reverseLeft(List(1,2,3,4,5)))
+
+    println(List(1,-3,4,2,6) sortWith  (_ < _))
+
+    println(words sortWith (_.length < _.length))
+
+    
   }
 
 }
