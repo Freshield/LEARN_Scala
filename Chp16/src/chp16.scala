@@ -1,6 +1,8 @@
 /**
   * Created by FRESHIELD on 2016/10/12.
   */
+import scala.List
+
 object chp16 {
 
   def main(args: Array[String]) {
@@ -253,7 +255,28 @@ object chp16 {
 
     println(words sortWith (_.length < _.length))
 
-    
+    println(List.apply(1,2,3))
+
+    println(List.range(1,5))
+    println(List.range(1,9,2))
+    println(List.range(9,1,-3))
+
+    println(List.fill(5)('a'))
+    println(List.fill(3)("hello"))
+
+    val zipped = "abcde".toList zip List(1,2,3)
+
+    val (xxx,yyy) = zipped.unzip
+    println(zipped.unzip)
+    println(xxx)
+    println(yyy)
+
+    val xss = List(List('a','b'),List('c'),List('d','e'))
+    println(xss.flatten)
+
+    println(List.concat(List(),List('b'),List('c')))
+
+
   }
 
 }
