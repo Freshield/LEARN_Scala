@@ -1,7 +1,7 @@
 /**
   * Created by FRESHIELD on 2016/10/12.
   */
-import scala.List
+import scala.collection.immutable
 
 object chp16 {
 
@@ -275,6 +275,14 @@ object chp16 {
     println(xss.flatten)
 
     println(List.concat(List(),List('b'),List('c')))
+
+    println(msort[Char](_ > _)(abcde))
+
+    def msortSwapped[T](xs: List[T])(less: (T,T) => Boolean): List[T] = {
+      msort(less)(xs)
+    }
+
+    println(msortSwapped(abcde)(_ > _))
 
 
   }
