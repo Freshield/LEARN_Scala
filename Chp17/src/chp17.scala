@@ -201,6 +201,67 @@ object chp17 {
     println(roughlyPi)
 
 
+    println(List(1,2,3))
+    println(Set('a','b','c'))
+    println(scala.collection.mutable.Map("hi" -> 2, "there" -> 3))
+    println(Array(1.0,2.0,3).mkString(" "))
+
+    val stuff = mutable.Set[Any](42)
+    println(stuff)
+    println(stuff.getClass)
+    stuff += "abracadabra"
+    println(stuff)
+    println(stuff.getClass)
+
+
+    val colors1 = List("blue","yellow","red","green")
+    val treeSet1 = scala.collection.immutable.TreeSet[String]() ++ colors1
+    println(treeSet1)
+
+    println(treeSet1.toList)
+    println(treeSet1.toArray)
+
+    val mutaSet2 = mutable.Set.empty ++ treeSet1
+    println(mutaSet2)
+    println(mutaSet2.getClass)
+    val immutaSet2 = Set.empty ++ mutaSet2
+    println(immutaSet2)
+    println(immutaSet2.getClass)
+
+    val muta = mutable.Map("i" -> 1, "ii" -> 2)
+    println(muta)
+    println(muta.getClass)
+    val immuta = Map.empty ++ muta
+    println(immuta)
+    println(immuta.getClass)
+
+    println((1,"hello",'x').getClass)
+
+    def longestWord(words: Array[String]) = {
+      var word = words(0)
+      var idx = 0
+      for (i <- 1 until words.length)
+        if (words(i).length > word.length){
+          word = words(i)
+          idx = i
+        }
+      (word,idx)
+    }
+
+    val longest = longestWord("The quick brown fox".split(" "))
+    println(longest)
+    println(longest._1)
+    println(longest._2)
+
+    val (word, idx) = longest
+    println(word)
+    println(idx)
+
+    val word1, idx1 = longest
+    println(word1)
+    println(idx1)
+
+
 
 
   }
