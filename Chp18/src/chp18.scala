@@ -27,6 +27,9 @@ object chp18 {
     println(t)
     t.fahrenheit = -40
     println(t)
+
+
+
   }
 
 }
