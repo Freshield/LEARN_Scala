@@ -180,6 +180,27 @@ object chp17 {
     println(capital += ("New Zealand" -> "Wellington"))
     println(capital("New Zealand"))
 
+    var people = Set("Nancy", "Jane")
+    println(people)
+    println(people += "Bob")
+    println(people)
+    people -= "Jane"
+    println(people)
+    people ++= List("Tom", "Harry")
+    println(people)
+
+    var capital1 = Map("US" -> "Washington","Paris" -> "France")
+    capital1 += ("Japan" -> "Tokyo")
+    println(capital)
+
+    var roughlyPi = 3.0
+    println(roughlyPi)
+    roughlyPi += 0.1
+    println(roughlyPi)
+    roughlyPi += 0.04
+    println(roughlyPi)
+
+
 
 
   }
