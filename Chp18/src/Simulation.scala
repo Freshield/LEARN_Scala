@@ -6,6 +6,7 @@ abstract class Simulation {
   type Action = () => Unit
 
   case class WorkItem(time: Int, action: Action)
+
   private var curtime = 0
   def currentTime: Int = curtime
 
