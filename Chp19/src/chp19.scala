@@ -13,6 +13,9 @@ object chp19 {
     val a2: Array[Any] = a1.asInstanceOf[Array[Any]]
     println(a2.getClass)
 
+    //val x: Queue[Any] = new StrangeIntQueue
+    //x.append("abc")
+
   }
 
 }
