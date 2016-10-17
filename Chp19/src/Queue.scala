@@ -1,7 +1,8 @@
+
 /**
   * Created by FRESHIELD on 2016/10/17.
   */
-class Queue[T] (
+class Queue[T] private(
   private val leading: List[T],
   private val trailing: List[T]
 ){
@@ -21,4 +22,9 @@ class Queue[T] (
 
   def append(x: T) =
     new Queue(leading, x :: trailing)
+
+}
+
+object Queue{
+  def apply[T](xs: T*)= new Queue[T](xs.toList, Nil)
 }
