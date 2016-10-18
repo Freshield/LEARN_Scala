@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="chp19.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chp19.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chp19.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
               <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Publication.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Publication.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="828">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -134,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/StrangeIntQueue.scala" />
         <option value="$PROJECT_DIR$/src/Queue.scala" />
         <option value="$PROJECT_DIR$/src/chp19.scala" />
+        <option value="$PROJECT_DIR$/src/Publication.scala" />
       </list>
     </option>
   </component>
@@ -220,10 +231,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.chp19">
+  <component name="RunManager" selected="Application.Customer">
     <configuration default="false" name="chp19" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="chp19" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Chp19" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Customer" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Customer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -623,12 +649,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.chp19" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Customer" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.chp19" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.Customer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.chp19" />
       </list>
     </recent_temporary>
   </component>
@@ -651,12 +679,12 @@
       <option name="presentableId" value="Default" />
       <updated>1476728952035</updated>
       <workItem from="1476728956609" duration="3669000" />
-      <workItem from="1476746428852" duration="2901000" />
+      <workItem from="1476746428852" duration="4115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6570000" />
+    <option name="totallyTimeSpent" value="7784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -810,6 +838,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Publication.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>
