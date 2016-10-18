@@ -30,6 +30,10 @@ object chp19 {
 
     fruit.goPrint()
 
+    val intqueue = QueueN[Int](1,2,3,4,5)
+
+    println(intqueue)
+
   }
 
 }
