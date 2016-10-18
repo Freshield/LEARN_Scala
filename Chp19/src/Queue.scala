@@ -20,8 +20,13 @@ class Queue[T] private(
     new Queue(q.leading.tail, q.trailing)
   }
 
-  def append(x: T) =
-    new Queue(leading, x :: trailing)
+  def goPrint(): Unit ={
+    leading.foreach(println)
+    trailing.reverse.foreach(println)
+  }
+
+  def append[U>: T](x: U) =
+    new Queue[U](leading, x :: trailing)
 
 }
 

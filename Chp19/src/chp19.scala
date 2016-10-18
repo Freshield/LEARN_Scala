@@ -16,6 +16,20 @@ object chp19 {
     //val x: Queue[Any] = new StrangeIntQueue
     //x.append("abc")
 
+    val apple = Queue[Apple](new Apple())
+
+    val orange = new Orange
+
+    val fruit = apple append orange
+
+    println(classOf[Queue[Fruit]] == fruit.getClass)
+
+    println(fruit.head.getClass)
+
+    println(fruit.tail.head.getClass)
+
+    fruit.goPrint()
+
   }
 
 }
