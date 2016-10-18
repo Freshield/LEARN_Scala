@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/chp19.scala" line="52" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd557382-fc8a-4830-bf13-6bf1fce94a5e" name="Default" comment="" />
     <ignored path="Chp19.iws" />
@@ -26,8 +29,18 @@
       <file leaf-file-name="chp19.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chp19.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="-276">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Person.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,16 +84,6 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SlowAppendQueue.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SlowAppendQueue.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -144,8 +147,9 @@
         <option value="$PROJECT_DIR$/src/StrangeIntQueue.scala" />
         <option value="$PROJECT_DIR$/src/Queue.scala" />
         <option value="$PROJECT_DIR$/src/Publication.scala" />
-        <option value="$PROJECT_DIR$/src/chp19.scala" />
         <option value="$PROJECT_DIR$/src/QueueN.scala" />
+        <option value="$PROJECT_DIR$/src/Person.scala" />
+        <option value="$PROJECT_DIR$/src/chp19.scala" />
       </list>
     </option>
   </component>
@@ -680,12 +684,12 @@
       <option name="presentableId" value="Default" />
       <updated>1476728952035</updated>
       <workItem from="1476728956609" duration="3669000" />
-      <workItem from="1476746428852" duration="5842000" />
+      <workItem from="1476746428852" duration="7346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9511000" />
+    <option name="totallyTimeSpent" value="11015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -851,10 +855,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chp19.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="-276">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding />
         </state>
       </provider>
