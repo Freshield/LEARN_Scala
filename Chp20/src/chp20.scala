@@ -38,6 +38,13 @@ object chp20 {
 
     println(test2.getClass)
 
+    val bessy = new Cow
+    val lassie = new Dog
+    val bootsie = new Dog
+
+
+    lassie eat (new bootsie.SuitableFood)
+
   }
 
 }
