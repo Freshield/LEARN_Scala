@@ -4,6 +4,12 @@
 object chp20 {
 
   def main(args: Array[String]) {
+    //val test = new testApple
+    //println(test.v)
+    //println(test.m)
+
+    
+
 
   }
 

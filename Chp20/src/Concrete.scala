@@ -7,4 +7,6 @@ class Concrete extends Abstract{
   val initial = "hi"
   var current = initial
 
+
+
 }
