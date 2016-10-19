@@ -8,7 +8,11 @@ object chp20 {
     //println(test.v)
     //println(test.m)
 
-    
+    val test = new testTime
+    println(test.hour)
+    println(test.minute)
+    test.hour_=(2)
+    println(test.hour)
 
 
   }
