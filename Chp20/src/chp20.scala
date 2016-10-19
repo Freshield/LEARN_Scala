@@ -45,6 +45,12 @@ object chp20 {
 
     lassie eat (new bootsie.SuitableFood)
 
+    for (d1 <- Direction.values) println(d1)
+
+    println(Direction.East.id)
+
+    println(Direction(1))
+
   }
 
 }
