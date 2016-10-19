@@ -23,11 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chp20.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chp20.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chp20.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="828">
               <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Food.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Food.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grass.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Grass.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -83,31 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractTime.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AbstractTime.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Abstract.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Abstract.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Concrete.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Concrete.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,6 +143,8 @@
         <option value="$PROJECT_DIR$/src/Demo.scala" />
         <option value="$PROJECT_DIR$/src/LayRationalTrait.scala" />
         <option value="$PROJECT_DIR$/src/chp20.scala" />
+        <option value="$PROJECT_DIR$/src/Food.scala" />
+        <option value="$PROJECT_DIR$/src/Grass.scala" />
       </list>
     </option>
   </component>
@@ -649,12 +651,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476886683094</updated>
-      <workItem from="1476886687559" duration="5250000" />
+      <workItem from="1476886687559" duration="5944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5250000" />
+    <option name="totallyTimeSpent" value="5944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -774,6 +776,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grass.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>
