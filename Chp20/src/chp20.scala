@@ -51,6 +51,8 @@ object chp20 {
 
     println(Direction(1))
 
+    println(Direction.→(_))
+
   }
 
 }
