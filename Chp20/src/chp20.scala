@@ -51,7 +51,24 @@ object chp20 {
 
     println(Direction(1))
 
-    println(Direction.→(_))
+    println(Direction.maxId)
+
+    new Currency {override def designation: String = "USD"
+
+      override val amount: Long = 79L
+    }
+
+    val yen = Japan.Yen from US.Dollar * 100
+    println(yen)
+    val euro = Europe.Euro from yen
+    println(euro)
+    val dollar = US.Dollar from euro
+    println(dollar)
+
+    println(US.Dollar * 100 + dollar)
+
+    
+
 
   }
 
