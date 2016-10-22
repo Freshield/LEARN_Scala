@@ -3,4 +3,8 @@
   */
 class chp21 {
 
+  def main(args: Array[String]) {
+    
+  }
+
 }
