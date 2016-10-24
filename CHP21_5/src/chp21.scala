@@ -45,6 +45,29 @@ object chp21 {
 
   //implicit def intToString(x: Int) = x.toString
 
+  def maxListUpBound[T <: Ordered[T]](elements: List[T]): T =
+    elements match {
+      case List() =>
+        throw new IllegalArgumentException("empty list!")
+      case List(x) => x
+      case x :: rest =>
+        val maxRest = maxListUpBound(rest)
+        if (x > maxRest) x
+        else maxRest
+    }
+
+  def maxListImpParm[T](elements: List[T])
+                       (implicit orderer: T => Ordered[T]):T = {
+    elements match {
+      case List() =>
+        throw new IllegalArgumentException("empty list!")
+      case List(x) => x
+      case x :: rest =>
+        val maxRest = maxListImpParm(rest)(orderer)
+        if (x > maxRest) x
+        else maxRest
+    }
+  }
 
   def main(args: Array[String]) {
     //println(stringWrapper("abc123") exists (_.isDigit))
@@ -83,7 +106,9 @@ object chp21 {
 
     Greeter.greet("Joe")
 
-
+    println(maxListImpParm(List(1,2,3,4,5)))
+    println(maxListImpParm(List(1.5,2.5,3.5)))
+    println(maxListImpParm(List("one","two","three")))
 
 
   }
