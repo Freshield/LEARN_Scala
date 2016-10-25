@@ -5,6 +5,47 @@
 
 object chp21 {
 
+  class PreferredPrompt(val preference: String)
+  class PreferredDrink(val preference: String)
+
+  object JoePref{
+    implicit val prompt = new PreferredPrompt("Yes, master> ")
+    implicit val drink = new PreferredDrink("tea")
+
+  }
+  object Greeter{
+    def greet(name: String)(implicit prompt: PreferredPrompt, drink: PreferredDrink): Unit ={
+      println("welcome, "+name+". the system is ready.")
+      print("but while you work, ")
+      println("why not enjoy a cup of "+drink.preference+"?")
+      println(prompt.preference)
+    }
+  }
+
+/*
+  implicit def stringWrapper(s: String) =
+    new IndexedSeq[Char] {
+      def length = s.length
+
+      def apply(i: Int) = s.charAt(i)
+    }
+*/
+  class Rational(val n: Int) {
+
+    def + (that: Rational): Rational =
+      new Rational(n + that.n)
+
+    override def toString = n.toString
+
+  }
+
+
+  def printWithSpaces(seq: IndexedSeq[Char]) =
+    seq mkString("/")
+
+  //implicit def intToString(x: Int) = x.toString
+
+
   def main(args: Array[String]) {
     //println(stringWrapper("abc123") exists (_.isDigit))
 
@@ -33,29 +74,20 @@ object chp21 {
 
     println(1 + one)
 
+    val bobsPrompt = new PreferredPrompt("relax> ")
+    println(bobsPrompt.preference)
 
-  }
-/*
-  implicit def stringWrapper(s: String) =
-    new IndexedSeq[Char] {
-      def length = s.length
 
-      def apply(i: Int) = s.charAt(i)
-    }
-*/
-  class Rational(val n: Int) {
+    import JoePref._
+    //Greeter.greet("Bob")(bobsPrompt)
 
-    def + (that: Rational): Rational =
-      new Rational(n + that.n)
+    Greeter.greet("Joe")
 
-    override def toString = n.toString
+
+
 
   }
 
-
-  def printWithSpaces(seq: IndexedSeq[Char]) =
-    seq mkString("/")
-
-  implicit def intToString(x: Int) = x.toString
 
 }
+
