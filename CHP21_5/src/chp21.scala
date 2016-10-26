@@ -24,6 +24,15 @@ object chp21 {
 
     println(i)
 
+    val one = new Rational(1)
+    println(one.n)
+    println(one + one)
+
+    implicit def intToRational(x: Int) =
+      new Rational(x)
+
+    println(1 + one)
+
 
   }
 /*
@@ -34,6 +43,14 @@ object chp21 {
       def apply(i: Int) = s.charAt(i)
     }
 */
+  class Rational(val n: Int) {
+
+    def + (that: Rational): Rational =
+      new Rational(n + that.n)
+
+    override def toString = n.toString
+
+  }
 
 
   def printWithSpaces(seq: IndexedSeq[Char]) =
