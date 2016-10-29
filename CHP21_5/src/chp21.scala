@@ -1,6 +1,7 @@
 /**
   * Created by FRESHIELD on 2016/11/2.
   */
+
 object chp21 {
 
   def main(args: Array[String]) {
@@ -9,6 +10,10 @@ object chp21 {
     println("try to do something")
 
     println(printWithSpaces(stringWrapper("xyz")))
+
+    println("fix")
+
+    
   }
 
   implicit def stringWrapper(s: String) =
@@ -19,6 +24,6 @@ object chp21 {
     }
 
   def printWithSpaces(seq: IndexedSeq[Char]) =
-    seq mkString(" ")
+    seq mkString("/")
 
 }
