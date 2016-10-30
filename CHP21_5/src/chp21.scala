@@ -1,15 +1,13 @@
-import java.util.RandomAccess
-
 /**
-  * Created by FRESHIELD on 2016/10/18.
+  * Created by FRESHIELD on 2016/11/2.
   */
+object chp21 {
 
-object chp21{
   def main(args: Array[String]) {
     println(stringWrapper("abc123") exists (_.isDigit))
 
     println("try to do something")
-    println(("abc123") exists(_.isDigit))
+
     println(printWithSpaces(stringWrapper("xyz")))
   }
 
