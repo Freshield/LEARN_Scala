@@ -8,6 +8,7 @@ object chp21{
   def main(args: Array[String]) {
     println(stringWrapper("abc123") exists (_.isDigit))
 
+    println("try to do something")
   }
 
   implicit def stringWrapper(s: String) =
