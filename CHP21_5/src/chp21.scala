@@ -6,11 +6,13 @@
 object chp21 {
 
   def main(args: Array[String]) {
-    println(stringWrapper("abc123") exists (_.isDigit))
+    //println(stringWrapper("abc123") exists (_.isDigit))
+
+    println("abc123" exists(_.isDigit))
 
     println("try to do something")
 
-    println(printWithSpaces(stringWrapper("xyz")))
+    //println(printWithSpaces(stringWrapper("xyz")))
 
     println("fix")
 
@@ -19,14 +21,14 @@ object chp21 {
 
 
   }
-
+/*
   implicit def stringWrapper(s: String) =
     new IndexedSeq[Char] {
       def length = s.length
 
       def apply(i: Int) = s.charAt(i)
     }
-
+*/
   def printWithSpaces(seq: IndexedSeq[Char]) =
     seq mkString("/")
 
