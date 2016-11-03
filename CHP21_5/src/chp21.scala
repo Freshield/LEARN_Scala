@@ -110,7 +110,20 @@ object chp21 {
     println(maxListImpParm(List(1.5,2.5,3.5)))
     println(maxListImpParm(List("one","two","three")))
 
+    println(maxList(List(1,2,3,4,5)))
 
+  }
+
+  def maxList[T <% Ordered[T]](elements: List[T]): T = {
+    elements match {
+      case List() =>
+        throw new IllegalArgumentException("empty list!")
+      case List(x) => x
+      case x :: rest =>
+        val maxRest = maxList(rest)
+        if(x > maxRest) x
+        else maxRest
+    }
   }
 
 
