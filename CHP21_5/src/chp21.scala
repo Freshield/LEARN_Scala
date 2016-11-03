@@ -18,6 +18,11 @@ object chp21 {
 
     println("test on centos")
 
+    implicit def doubleToInt(x: Double) = x.toInt
+
+    val i: Int = 3.5
+
+    println(i)
 
 
   }
@@ -29,6 +34,8 @@ object chp21 {
       def apply(i: Int) = s.charAt(i)
     }
 */
+
+
   def printWithSpaces(seq: IndexedSeq[Char]) =
     seq mkString("/")
 
