@@ -112,6 +112,13 @@ object chp21 {
 
     println(maxList(List(1,2,3,4,5)))
 
+    enjoy("reader")
+
+  }
+
+  def enjoy(name: String)(implicit drink:PreferredDrink): Unit ={
+    print("welcome "+name)
+    println(". Enjoy a " + drink.preference+"!")
   }
 
   def maxList[T <% Ordered[T]](elements: List[T]): T = {
