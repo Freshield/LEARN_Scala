@@ -33,6 +33,40 @@ object chp23 {
 
     println(queens(8).length)
 
+    val books: List[Book] =
+      List(
+        Book("structure", "abelson", "sussman"),
+        Book("principles", "aho", "ullman"),
+        Book("programming", "wirth"),
+        Book("elements", "ullman"),
+        Book("the", "gosling", "joy", "steele", "bracha")
+      )
+
+    val pair4 = for (b <- books; a <- b.authors; if a startsWith "gosling")
+      yield b.title
+
+    println(pair4)
+
+    val pair5 = for (b <- books if (b.title indexOf "the") >= 0)
+      yield b.title
+
+    println(pair5)
+    pair5.foreach(println)
+
+    val pair6 = for (b1 <- books; b2 <- books if b1 != b2;
+    a1 <- b1.authors; a2 <- b2.authors if a1 == a2)
+      yield a1
+
+    removeDuplicates(pair6).foreach(println)
+
+  }
+
+  def removeDuplicates[A](xs: List[A]): List[A] = {
+    if (xs.isEmpty) xs
+    else
+      xs.head :: removeDuplicates(
+        xs.tail filter(x => x != xs.head)
+      )
   }
 
   def queens(n: Int): List[List[(Int, Int)]] = {
@@ -48,18 +82,22 @@ object chp23 {
         } yield queen :: queens
 
     def isSafe(queen: (Int, Int), queens: List[(Int, Int)]) =
-      queens forall(q => !inCheck(queen, q))
+      queens forall (q => !inCheck(queen, q))
 
     def inCheck(q1: (Int, Int), q2: (Int, Int)) =
       q1._1 == q2._1 ||
-      q1._2 == q2._2 ||
+        q1._2 == q2._2 ||
         Math.abs(q1._1 - q2._1) == Math.abs(q1._2 - q2._2)
 
     placeQueens(n)
   }
 
+
+
   case class Person(name: String,
                     isMale: Boolean,
                     children: Person*)
+
+  case class Book(title: String, authors: String*)
 
 }
