@@ -31,6 +31,31 @@ object chp23 {
 
     pair3.foreach(println)
 
+    println(queens(8).length)
+
+  }
+
+  def queens(n: Int): List[List[(Int, Int)]] = {
+    def placeQueens(k: Int): List[List[(Int, Int)]] =
+      if (k == 0)
+        List(List())
+      else
+        for {
+          queens <- placeQueens(k - 1)
+          column <- 1 to n
+          queen = (k, column)
+          if isSafe(queen, queens)
+        } yield queen :: queens
+
+    def isSafe(queen: (Int, Int), queens: List[(Int, Int)]) =
+      queens forall(q => !inCheck(queen, q))
+
+    def inCheck(q1: (Int, Int), q2: (Int, Int)) =
+      q1._1 == q2._1 ||
+      q1._2 == q2._2 ||
+        Math.abs(q1._1 - q2._1) == Math.abs(q1._2 - q2._2)
+
+    placeQueens(n)
   }
 
   case class Person(name: String,
