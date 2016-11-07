@@ -59,6 +59,11 @@ object chp23 {
 
     removeDuplicates(pair6).foreach(println)
 
+    val list1 = List(1,2,3,4)
+
+    println(for (x <- list1) yield x)
+    println(list1.map(x => x))
+
   }
 
   def removeDuplicates[A](xs: List[A]): List[A] = {
