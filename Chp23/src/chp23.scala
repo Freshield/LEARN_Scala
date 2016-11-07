@@ -16,6 +16,21 @@ object chp23 {
 
     pair1.foreach(println)
 
+    val pair2 = for {
+      p <- persons
+      n = p.name
+      if (n startsWith "L")
+  } yield n
+
+    pair2.foreach(println)
+
+    val pair3 = for {
+      x <- List(1,2)
+      y <- List("one","two")
+    } yield (x, y)
+
+    pair3.foreach(println)
+
   }
 
   case class Person(name: String,
