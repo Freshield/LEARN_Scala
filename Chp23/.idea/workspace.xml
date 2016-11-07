@@ -26,8 +26,8 @@
       <file leaf-file-name="chp23.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chp23.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
-              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+            <state relative-caret-position="677">
+              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -561,12 +561,12 @@
       <option name="presentableId" value="Default" />
       <updated>1478480999435</updated>
       <workItem from="1478481002481" duration="1376000" />
-      <workItem from="1478546285435" duration="4570000" />
+      <workItem from="1478546285435" duration="4745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5946000" />
+    <option name="totallyTimeSpent" value="6121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -629,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chp23.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        <state relative-caret-position="677">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -64,6 +64,10 @@ object chp23 {
     println(for (x <- list1) yield x)
     println(list1.map(x => x))
 
+    println("interesting")
+
+    
+
   }
 
   def removeDuplicates[A](xs: List[A]): List[A] = {
