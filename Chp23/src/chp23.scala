@@ -67,6 +67,10 @@ object chp23 {
     println("interesting")
 
 
+    val test = List("coffee panda", "happy panda")
+    val test1 = test.map(x => x.split(" "))
+    test.flatMap(x => x.split(" ")).foreach(println)
+    test1.foreach(_.foreach(println))
 
 
   }
