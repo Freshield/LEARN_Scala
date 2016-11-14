@@ -20,6 +20,14 @@ object chp24 {
     val b = a.lastOption
     println(b)
 
+    IsTwice.isTwice("123123")
+    IsTwice.isTwice("12312")
+
+    IsEMail.userTwiceUpper("DIDI@gmail.com")
+    IsEMail.userTwiceUpper("dido@gmail.com")
+    IsEMail.userTwiceUpper("DIDO@gmail.com")
+    IsEMail.userTwiceUpper("didi@gmail.com")
+
 
 
   }

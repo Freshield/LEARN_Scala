@@ -8,6 +8,10 @@ object IsEMail {
       case EMail(user, domain) => println(user +" AT "+ domain)
       case _ => println("not an email address")
     }
-  
+
+  def userTwiceUpper(s: String) = s match {
+    case EMail(Twice(x @ UpperCase()), domain) => println("match: " + x + " in domain " + domain)
+    case _ => println("no match")
+  }
 
 }

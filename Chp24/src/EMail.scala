@@ -7,7 +7,7 @@ object EMail {
 
   def unapply(str: String): Option[(String, String)] = {
     val parts = str split "@"
-    if (parts.length == 2) Some(parts(0), parts(1)) else None
+    if (parts.length == 2) {println("email "+parts(0));Some(parts(0), parts(1))} else None
   }
 
 }
