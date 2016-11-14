@@ -28,6 +28,12 @@ object chp24 {
     IsEMail.userTwiceUpper("DIDO@gmail.com")
     IsEMail.userTwiceUpper("didi@gmail.com")
 
+    println(IsEMail.isTomInDotCom("tom@sun.com"))
+    println(IsEMail.isTomInDotCom("peter@sun.com"))
+    println(IsEMail.isTomInDotCom("tom@acm.org"))
+
+    ExpandedEMail(name, topdom, subdoms @ _*) = "tom@support.epfl.ch"
+
 
 
   }

@@ -14,4 +14,9 @@ object IsEMail {
     case _ => println("no match")
   }
 
+  def isTomInDotCom(s: String): Boolean = s match {
+    case EMail("tom", Domain("com", _*)) => true
+    case _ => false
+  }
+
 }
