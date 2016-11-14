@@ -8,5 +8,6 @@ object IsEMail {
       case EMail(user, domain) => println(user +" AT "+ domain)
       case _ => println("not an email address")
     }
+  
 
 }
