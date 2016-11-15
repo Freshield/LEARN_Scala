@@ -38,6 +38,17 @@ object chp24 {
     println(topdom)
     println(subdom)
 
+    val x = List(1,2,3)
+    val test1 = x match {
+      case x: Seq[Int] => println("seq");x
+      case List() => println("array");List()
+      case List(w @ _*) => println("list");w
+      case _ => println("other");None
+
+    }
+
+    println(test1)
+
 
 
   }
