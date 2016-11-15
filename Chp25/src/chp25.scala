@@ -4,11 +4,13 @@
 object chp25 {
 
   def main(args: Array[String]) {
-    @deprecated def bigMistake(): Unit ={
 
-    }
+
+    //@cool val normal = "hello"
+    //@coolerThan(normal) val fonzy = "heeyyy"
 
     
+
   }
 
 }
