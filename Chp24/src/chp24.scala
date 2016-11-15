@@ -53,9 +53,38 @@ object chp24 {
 
     println("---------------------------")
 
-    val Decimal = """"(-)?(\d+)(\.\d*)?"""".r
-    println(Decimal)
+    val Decimal1 = """(-)?(\d+)(\.\d*)?""".r
+    println(Decimal1)
 
+    val Decimal = new Regex("(-)?(\\d+)(\\.\\d*)?")
+    val Decimal2 = "(-)?(\\d+)(\\.\\d*)?".r
+
+
+    val input1 = "for -1.0 to 99 by 3"
+    println(input1)
+
+    println("---------------------------")
+
+    for (s <- Decimal1 findAllIn(input1)){
+      println("here")
+      println(s)
+    }
+
+    println(Decimal1 findFirstIn(input1))
+
+
+    val Decimal(sign, integerpart, decimalpart) = "-1.23"
+    println(sign)
+    println(integerpart)
+    println(decimalpart)
+
+    val Decimal(sign1, integerpart1, decimalpart1) = "1.0"
+    println(sign1)
+    println(integerpart1)
+    println(decimalpart1)
+
+    for (Decimal(s, i, d) <- Decimal findAllIn input1)
+      println("sign: " + s + ", integer: " + i + ", decimal: " + d)
 
 
 
