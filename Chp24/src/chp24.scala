@@ -32,7 +32,11 @@ object chp24 {
     println(IsEMail.isTomInDotCom("peter@sun.com"))
     println(IsEMail.isTomInDotCom("tom@acm.org"))
 
-    ExpandedEMail(name, topdom, subdoms @ _*) = "tom@support.epfl.ch"
+    val ExpandedEMail(name1, topdom, subdom @ _*) = "tom@support.epfl.ch"
+
+    println(name1)
+    println(topdom)
+    println(subdom)
 
 
 
