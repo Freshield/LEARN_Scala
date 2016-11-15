@@ -1,6 +1,8 @@
 /**
   * Created by FRESHIELD on 2016/11/10.
   */
+import scala.util.matching.Regex
+
 object chp24 {
 
   def main(args: Array[String]) {
@@ -48,6 +50,12 @@ object chp24 {
     }
 
     println(test1)
+
+    println("---------------------------")
+
+    val Decimal = """"(-)?(\d+)(\.\d*)?"""".r
+    println(Decimal)
+
 
 
 
