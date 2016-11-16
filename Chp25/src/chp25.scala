@@ -9,7 +9,7 @@ object chp25 {
     //@cool val normal = "hello"
     //@coolerThan(normal) val fonzy = "heeyyy"
 
-    
+
 
   }
 
