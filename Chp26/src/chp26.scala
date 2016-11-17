@@ -75,14 +75,42 @@ object chp26 {
     println(loadnode)
     println(fromXML(loadnode))
 
+    println(proc(<a>apple</a>))
+    println(proc(<b>banana</b>))
+    println(proc(<c>cherry</c>))
+
+    println(proc(<a>a <em>red</em> apple</a>))
+    println(<a/>)
+
+    val catalog =
+      <catalog>
+        <cctherm>
+          <description>hot dog #5</description>
+        </cctherm>
+        <cctherm>
+          <description>Sprite Boy</description>
+        </cctherm>
+      </catalog>
+
+    catalog match {
+      case <catalog>{therms @_*}</catalog> =>
+        for (therm @ <cctherm>{_*}</cctherm> <- therms)
+          println("processing: " + (therm \ "description").text)
+    }
 
 
 
   }
 
-  
+  def proc(node: scala.xml.Node): String = {
+    node match {
+      case <a>{contents @ _*}</a> => "It's an a : " + contents
+      case <b>{contents}</b> => "It's a b: " + contents
+      case _ => "not match"
+    }
+  }
 
-  def fromXML(node: scala.xml.Elem): CCTherm =
+  def fromXML(node: scala.xml.Node): CCTherm =
     new CCTherm {
       override val condition: Int = (node \ "condition").text.toInt
       override val description: String = (node \ "description").text
