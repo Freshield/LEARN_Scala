@@ -12,6 +12,26 @@ object chp26 {
     </a>
 
     println(elem)
+
+    val elem1 = <a> {"hello" + ", world"} </a>
+    println(elem1)
+
+    val yearMade = 1955
+
+    val elem2 = <a>
+      {if (yearMade < 2000) <old>{yearMade}</old>
+       else xml.NodeSeq.Empty}
+    </a>
+
+    println(elem2)
+
+    val elem3 = <a>{3 + 4}</a>
+    println(elem3)
+
+    val elem4 = <a>{"</a>potential security hole<a>"}</a>
+    println(elem4)
+
+    
   }
 
 }
