@@ -48,6 +48,8 @@ object chp26 {
 
     val elem6 = <a name="a"><b name="b"><c>hello</c></b></a>
 
+    println((elem6 \\ "a").text)
+
     println(elem6 \\ "@name")
 
     val joe = <employee
@@ -59,6 +61,33 @@ object chp26 {
     println(joe \ "@name")
     println(joe \ "@serial")
 
+    val node1 = therm.toXML
+    println(node1.getClass)
+    println((node1 \ "condition").text.toInt)
+    println((node1 \ "description").text)
+    println()
+    val nodeBack = fromXML(node1)
+    println(nodeBack)
+
+    scala.xml.XML.save("therm1.xml",node1,"UTF-8",true,null)
+
+    val loadnode = xml.XML.loadFile("therm1.xml")
+    println(loadnode)
+    println(fromXML(loadnode))
+
+
+
+
   }
+
+  
+
+  def fromXML(node: scala.xml.Elem): CCTherm =
+    new CCTherm {
+      override val condition: Int = (node \ "condition").text.toInt
+      override val description: String = (node \ "description").text
+      override val yearMade: Int = (node \ "yearMade").text.toInt
+      override val dateObtained: String = (node \ "dateObtained").text
+    }
 
 }

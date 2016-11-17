@@ -16,4 +16,6 @@ abstract class CCTherm {
       <dateObtained>{dateObtained}</dateObtained>
       <condition>{condition}</condition>
     </cctherm>
+
+
 }
