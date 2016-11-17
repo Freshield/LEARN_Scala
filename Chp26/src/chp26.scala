@@ -31,7 +31,34 @@ object chp26 {
     val elem4 = <a>{"</a>potential security hole<a>"}</a>
     println(elem4)
 
-    
+    val therm = new CCTherm {
+      override val condition: Int = 9
+      override val description: String = "hot dog #5"
+      override val yearMade: Int = 1952
+      override val dateObtained: String = "March 14, 2006"
+    }
+
+    println(therm)
+    println(therm.toXML)
+
+    val elem5 = <a> Sounds <tag/> good </a>.text
+    println(elem5)
+
+    println(<a> input ----&gt; output</a>.text)
+
+    val elem6 = <a name="a"><b name="b"><c>hello</c></b></a>
+
+    println(elem6 \\ "@name")
+
+    val joe = <employee
+    name = "Joe"
+    rank = "code monkey"
+    serial = "123"
+      />
+
+    println(joe \ "@name")
+    println(joe \ "@serial")
+
   }
 
 }
