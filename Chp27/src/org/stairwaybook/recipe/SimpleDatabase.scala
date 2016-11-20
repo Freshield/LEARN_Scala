@@ -3,15 +3,10 @@ package org.stairwaybook.recipe
 /**
   * Created by FRESHIELD on 2016/11/19.
   */
-object SimpleDatabase {
+object SimpleDatabase extends Database{
   def allFoods = List(Apple, Orange, Cream, Sugar)
 
-  def foodNamed(name: String): Option[Food] =
-    allFoods.find(_.name == name)
-
   def allRecipes: List[Recipe] = List(FruitSalad)
-
-  case class FoodCategory(name: String, foods: List[Food])
 
   private var categories = List(
     FoodCategory("fruit", List(Apple, Orange)),
@@ -21,12 +16,7 @@ object SimpleDatabase {
   def allCategories = categories
 }
 
-object SimpleBrowser{
-  def recipesUsing(food: Food) =
-    SimpleDatabase.allRecipes.filter(recipe =>
-    recipe.ingredients.contains(food))
+object SimpleBrowser extends Browser{
 
-  def displayCategory(category: SimpleDatabase.FoodCategory): Unit ={
-    println(category)
-  }
+  val database = SimpleDatabase
 }

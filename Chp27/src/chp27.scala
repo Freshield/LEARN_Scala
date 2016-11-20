@@ -11,6 +11,12 @@ object chp27 {
 
     val recipe = SimpleBrowser.recipesUsing(apple)
     println(recipe)
+
+    val frozenfood = StudentDatabase.foodNamed("FrozenFood").get
+    println(frozenfood)
+
+    val studentRecipe = StudentBrowser.recipesUsing(frozenfood)
+    println(studentRecipe)
   }
 
 }
