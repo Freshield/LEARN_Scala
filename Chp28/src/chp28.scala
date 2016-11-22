@@ -53,6 +53,7 @@ object chp28 {
     val b2 = new Branch[List[Int]](Nil, EmptyYTree, EmptyYTree)
 
     println(b1 == b2)
+    println()
 
 
   }
