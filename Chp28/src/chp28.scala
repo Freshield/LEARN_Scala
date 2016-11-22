@@ -47,9 +47,13 @@ object chp28 {
     println(colll contains p)
     println(colll contains cp)
     println(colll contains pAnon)
+    println()
 
+    val b1 = new Branch[List[String]](Nil, EmptyYTree, EmptyYTree)
+    val b2 = new Branch[List[Int]](Nil, EmptyYTree, EmptyYTree)
 
-    
+    println(b1 == b2)
+
 
   }
 
